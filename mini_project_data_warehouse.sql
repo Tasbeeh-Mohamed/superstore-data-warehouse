@@ -57,7 +57,7 @@ GO
 TRUNCATE TABLE staging.superstore
 
 BULK INSERT staging.superstore
-FROM 'D:\depi_analysis\sql\mini_project2\Central_Superstore_.csv'
+FROM 'YOUR_CSV_FILE_PATH'
 WITH(
 	FIRSTROW = 2,
 	FIELDTERMINATOR = ',',
@@ -66,7 +66,7 @@ WITH(
 	FIELDQUOTE = '"',
 	CODEPAGE = '65001',
 	MAXERRORS = 0,
-	ERRORFILE = 'D:\depi_analysis\sql\mini_project2\SUPERSTORE_ERRORS.log'
+	ERRORFILE = 'YOUR_ERROR_FILE_PATH'
 );
 GO
 
